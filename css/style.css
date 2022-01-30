@@ -48,9 +48,11 @@ img {
 }
 body {
 	font-family: "Raleway", sans-serif;
+	color: #fff;
 }
 
 .container {
+	width: 100%;
 	max-width: 1194px;
 }
 
@@ -106,4 +108,25 @@ body {
 }
 .nav-item:last-child {
 	margin-right: 0;
+}
+
+.main {
+	background-color: #252726;
+}
+.banner {
+	padding: 280px 0;
+}
+.banner__title {
+	font-size: 60px;
+	line-height: 1;
+	font-weight: 200;
+	margin-bottom: 30px;
+}
+
+.btn__banner {
+	min-width: 170px;
+	vertical-align: middle;
+	border-radius: 0;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
