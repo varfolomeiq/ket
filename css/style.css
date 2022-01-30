@@ -110,10 +110,8 @@ body {
 	margin-right: 0;
 }
 
-.main {
-	background-color: #252726;
-}
 .banner {
+	background-color: #252726;
 	padding: 280px 0;
 }
 .banner__title {
@@ -129,4 +127,34 @@ body {
 	border-radius: 0;
 	padding-top: 12px;
 	padding-bottom: 12px;
+}
+
+.services {
+	padding: 130px 0;
+}
+.services__img {
+	margin-bottom: 50px;
+}
+
+.services__title {
+	position: relative;
+	color: #3f4244;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 45px;
+}
+
+.services__title::before {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 70px;
+	height: 2px;
+	background-color: #00e1fd;
+}
+
+.services__text {
+	color: #929ba0;
 }
