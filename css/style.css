@@ -121,7 +121,7 @@ body {
 	margin-bottom: 30px;
 }
 
-.btn__banner {
+.btn-banner {
 	min-width: 170px;
 	vertical-align: middle;
 	border-radius: 0;
@@ -157,4 +157,83 @@ body {
 
 .services__text {
 	color: #929ba0;
+}
+
+.choice {
+	padding: 50px 0px 0px 0px;
+	background-color: #f7f7f7;
+	height: 575px;
+	overflow-y: hidden;
+}
+.tab {
+	margin-bottom: 85px;
+}
+
+.tab button {
+	font-weight: 500;
+	color: #3f4244;
+	background-color: inherit;
+	float: left;
+	border: 1px solid #ccc;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+
+.tab button.active {
+	border: 1px solid #00e1fd;
+}
+
+.tabcontent {
+	display: none;
+}
+
+.tab button {
+	width: 100%;
+}
+
+.tabcontent__btn {
+	border-radius: 0;
+	min-width: 170px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.tabcontent__description {
+	padding-top: 35px;
+}
+
+.tabcontent__title {
+	font-size: 40px;
+	color: #3f4244;
+	margin-bottom: 30px;
+}
+
+.tabcontent__text {
+	font-size: 15px;
+	font-weight: 300;
+	color: #3f4244;
+	margin-bottom: 30px;
+}
+.tabcontent__inner--left {
+	flex-direction: row-reverse;
+}
+
+.tablinks {
+	position: relative;
+}
+
+.tablinks.active::before {
+	content: "";
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+	transform: rotate(-45deg) translateX(-50%);
+	width: 12px;
+	height: 12px;
+	background-color: #f7f7f7;
+	border-left: 1px solid #00e1fd;
+	border-bottom: 1px solid #00e1fd;
 }
