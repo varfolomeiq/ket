@@ -237,3 +237,35 @@ body {
 	border-left: 1px solid #00e1fd;
 	border-bottom: 1px solid #00e1fd;
 }
+
+.clean-design {
+	padding-top: 100px;
+	background-color: #252726;
+}
+.clean-design__title {
+	position: relative;
+	font-size: 40px;
+	font-weight: 400;
+	margin-bottom: 60px;
+}
+.clean-design__title::before {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 170px;
+	height: 2px;
+	background-color: #00e1fd;
+}
+
+.clean-design__text {
+	font-size: 13px;
+	font-weight: 300;
+	margin-bottom: 120px;
+}
+
+.clean-design__image {
+	width: 100%;
+	max-width: 1000px;
+}
