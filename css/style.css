@@ -241,6 +241,7 @@ body {
 .clean-design {
 	padding-top: 100px;
 	background-color: #252726;
+	overflow-y: hidden;
 }
 .clean-design__title {
 	position: relative;
@@ -268,4 +269,32 @@ body {
 .clean-design__image {
 	width: 100%;
 	max-width: 1000px;
+	margin-bottom: -50px;
+}
+
+.path-brand {
+	padding-top: 120px;
+}
+.path-brand__title {
+	font-size: 17px;
+	color: #3f4244;
+	margin-bottom: 15px;
+}
+
+.path-brand__text {
+	font-size: 13px;
+	color: #929ba0;
+	margin-bottom: 15px;
+}
+
+.path-brand__link {
+	font-size: 13px;
+	font-weight: 300;
+	color: #00e1fd;
+}
+
+.path-brand__date {
+	font-size: 13px;
+	font-weight: 300;
+	color: #c8cdce;
 }
