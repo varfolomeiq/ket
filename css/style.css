@@ -352,3 +352,21 @@ body {
 	border-top: 8px solid transparent;
 	border-bottom: 8px solid transparent;
 }
+
+.statistics {
+	background-color: #131316;
+	padding: 80px 0px 80px 0px;
+}
+
+.statistics__image {
+	margin-bottom: 50px;
+	min-height: 70px;
+}
+.statistics__number {
+	margin-bottom: 20px;
+	opacity: 0;
+}
+.statistics__text {
+	font-size: 13px;
+	font-weight: 500;
+}
