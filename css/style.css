@@ -652,3 +652,39 @@ body {
 	font-weight: 600;
 	color: #00e1ff;
 }
+
+.design {
+	padding: 200px 0px 170px 0px;
+	background-color: #252726;
+}
+
+.design__inner {
+	position: relative;
+}
+.design__image {
+	position: absolute;
+	top: -53px;
+	left: -35px;
+}
+
+.design__title {
+	position: relative;
+	font-size: 25px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 60px;
+}
+.design__title::before {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	width: 70px;
+	height: 2px;
+	background-color: #00e1fd;
+}
+
+.design__text {
+	font-size: 13px;
+	font-weight: 300;
+}
