@@ -741,3 +741,33 @@ body {
 	font-size: 13px;
 	color: #929ba0;
 }
+
+.subscribe {
+	background-color: #252726;
+	padding: 90px 0px 90px 0px;
+}
+
+.subscribe__title {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+
+.subscribe__btn {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 12px 10px 12px 10px;
+	width: 100%;
+	max-width: 170px;
+	text-align: center;
+	color: #fff;
+	border: 1px solid #00e1ff;
+	transition: all 0.3s ease;
+}
+
+.subscribe__btn:hover {
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #fff;
+	transition: all 0.3s ease;
+}
