@@ -771,7 +771,48 @@ body {
 	border: 1px solid #fff;
 	transition: all 0.3s ease;
 }
+.map {
+	background-color: #252726;
+	padding: 120px 0px 120px 0px;
+}
+.map__marker {
+	position: relative;
+	background-color: #07bcd4;
+	padding: 20px 20px 20px 20px;
+}
+.map__marker::before {
+	content: "";
+	position: absolute;
+	bottom: -14px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 14px 12.5px 0 12.5px;
+	border-color: #07bcd4 transparent transparent transparent;
+}
+.map__address {
+	font-size: 15px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.map__mail,
+.map__tel {
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	transition: all 0.3s ease;
+}
+.map__mail {
+	margin-bottom: 20px;
+}
 
+.map__mail:hover,
+.map__tel:hover {
+	color: #131316;
+	transition: all 0.3s ease;
+}
 .footer {
 	background-color: #131316;
 	padding: 40px 0px 40px 0px;
