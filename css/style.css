@@ -771,3 +771,17 @@ body {
 	border: 1px solid #fff;
 	transition: all 0.3s ease;
 }
+
+.footer {
+	background-color: #131316;
+	padding: 40px 0px 40px 0px;
+}
+
+.footer__copy {
+	font-size: 15px;
+	text-transform: capitalize;
+}
+
+.footer__copy span {
+	color: #00e1ff;
+}
