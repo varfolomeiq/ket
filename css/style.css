@@ -688,3 +688,56 @@ body {
 	font-size: 13px;
 	font-weight: 300;
 }
+
+.reviews {
+	padding: 90px 0px 90px 0px;
+}
+.reviews__top {
+	margin-bottom: 90px;
+}
+.reviews__title {
+	position: relative;
+	font-size: 40px;
+	font-weight: 400;
+	color: #3f4244;
+	margin-bottom: 50px;
+}
+
+.reviews__title::before {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 170px;
+	height: 2px;
+	background-color: #00e1fd;
+}
+.reviews__text {
+	font-size: 13px;
+	color: #929ba0;
+}
+
+.client__item {
+	border: 1px solid #cdced0;
+	padding: 45px 30px 45px 30px;
+}
+
+.client__name {
+	font-size: 20px;
+	font-weight: 400;
+	color: #3f4244;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+
+.client__position {
+	font-size: 13px;
+	color: #00e1ff;
+	margin-bottom: 30px;
+}
+
+.client__message {
+	font-size: 13px;
+	color: #929ba0;
+}
