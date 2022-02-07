@@ -663,7 +663,7 @@ body {
 }
 .design__image {
 	position: absolute;
-	top: -53px;
+	top: -34px;
 	left: -35px;
 }
 
@@ -771,6 +771,107 @@ body {
 	border: 1px solid #fff;
 	transition: all 0.3s ease;
 }
+
+.contacts {
+	padding: 90px 0px 90px 0px;
+	background-color: #131316;
+}
+.contacts__top {
+	margin-bottom: 90px;
+}
+.contacts__title {
+	position: relative;
+	text-transform: capitalize;
+	font-size: 40px;
+	font-weight: 400;
+	margin-bottom: 50px;
+}
+.contacts__title::before {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 170px;
+	height: 2px;
+	background-color: #00e1fd;
+}
+.contacts__text {
+	font-size: 13px;
+}
+.form__input-box {
+	position: relative;
+}
+.form__input {
+	padding: 10px 10px 10px 20px;
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #fff;
+	outline: none;
+	color: #fff;
+}
+.form__input:focus::placeholder,
+.form__message:focus::placeholder {
+	color: transparent;
+}
+.form__input-box::before,
+.form__input-box::after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 2px;
+	height: 10px;
+	background-color: #fff;
+}
+.form__input-box::before {
+	left: 12px;
+}
+.form__input-box::after {
+	right: 12px;
+}
+.form__input::placeholder,
+.form__message::placeholder {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.form__textarea-box {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+.form__message {
+	position: relative;
+	padding: 15px 10px 10px 20px;
+	width: 100%;
+	resize: none;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	background-color: transparent;
+}
+.form__textarea-box::after,
+.form__textarea-box::before {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 7px;
+	width: 2px;
+	height: 10px;
+	background-color: #fff;
+}
+.form__textarea-box::before {
+	left: 12px;
+}
+.form__textarea-box::after {
+	right: 12px;
+}
+
 .map {
 	background-color: #252726;
 	padding: 120px 0px 120px 0px;
