@@ -19,8 +19,8 @@
 <body>
 	<div class="page-holder">
 		<div id="wrapper">
-			<header class="header container">
-				<nav class="navbar navbar-expand-xl navbar-light p-0">
+			<!-- <header class="header container">
+				<nav class="navbar fixed-top navbar-expand-xl navbar-light p-0">
 					<div class="container-fluid">
 						<a class="navbar-brand" href="#"><img src="img/logo.png" alt=""><span>KET</span></a>
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -52,6 +52,40 @@
 						</div>
 					</div>
 				</nav>
+			</header> -->
+			<header class="header">
+				<div class="container">
+					<div class="header__body">
+						<a href="" class="header__logo">
+							<img src="img/logo.png" alt="logo">
+						</a>
+						<div class="header__burger">
+							<span></span>
+						</div>
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li>
+									<a href="#" class="header__link">Home</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">Services</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">Portfolio</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">About</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">News</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</header>
 			<main class="main">
 				<section class="banner">
@@ -66,27 +100,31 @@
 				<section class="services">
 					<div class="container">
 						<div class="row">
-							<div class="col-3 d-flex flex-column  align-items-center">
+							<div
+								class="services-box col-12 col-md-6 col-lg-4 col-xxl-3 d-flex flex-column  align-items-center">
 								<div class="services__img">
 									<img src="img/web-design.png" alt="web desing">
 								</div>
 								<h3 class="services__title">Web design</h3>
 								<p class="services__text text-center">Eum cu tantas legere complectitur</p>
 							</div>
-							<div class="col-3 d-flex flex-column  align-items-center">
+							<div
+								class="services-box col-12 col-md-6 col-lg-4 col-xxl-3 d-flex flex-column  align-items-center">
 								<div class="services__img">
 									<img src="img/graphic-desing.png" alt="graphic desing">
 								</div>
 								<h3 class="services__title">Graphic desing</h3>
 							</div>
-							<div class="col-3 d-flex flex-column  align-items-center">
+							<div
+								class="services-box col-12 col-md-6 col-lg-4 col-xxl-3 d-flex flex-column  align-items-center">
 								<div class="services__img">
 									<img src="img/programming.png" alt="programming">
 								</div>
 								<h3 class="services__title">Programming</h3>
 								<p class="services__text text-center">Eum cu tantas legere complectitur, hinc utamur ea eam</p>
 							</div>
-							<div class="col-3 d-flex flex-column  align-items-center">
+							<div
+								class="services-box col-12 col-md-6 col-lg-4 col-xxl-3 d-flex flex-column  align-items-center">
 								<div class="services__img">
 									<img src="img/photography.png" alt="photography">
 								</div>
@@ -99,7 +137,7 @@
 				<section class="choice">
 					<div class="container">
 						<div class="row">
-							<div class="col-10 m-auto d-flex">
+							<div class="col-12 col-md-10 m-auto d-flex">
 								<div class="tab col-6">
 									<button class="tablinks text-uppercase" onclick="openDev(event, 'startour')">Star
 										tour</button>
@@ -112,11 +150,11 @@
 							</div>
 						</div>
 						<div id="startour" class="tabcontent">
-							<div class="tabcontent__inner tabcontent__inner--left row d-flex">
-								<div class="tabcontent__image col-5 text-start">
+							<div class="tabcontent__inner tabcontent__inner--left row">
+								<div class="tabcontent__image col-12 col-md-5">
 									<img src="img/phones.png" alt="phones">
 								</div>
-								<div class="tabcontent__description col-6">
+								<div class="tabcontent__description col-12 col-md-6">
 									<h2 class="tabcontent__title">Fully Resposive</h2>
 									<p class="tabcontent__text">Eum cu tantas legere complectitur, hinc utamur ea eam. Lorem
 										ipsum
@@ -130,11 +168,11 @@
 							</div>
 						</div>
 						<div id="alldev" class="tabcontent">
-							<div class="tabcontent__inner tabcontent__inner--right row d-flex">
-								<div class="tabcontent__image col-5 text-end">
+							<div class="tabcontent__inner tabcontent__inner--right row">
+								<div class="tabcontent__image col-12 col-md-5">
 									<img src="img/phones.png" alt="phones">
 								</div>
-								<div class="tabcontent__description col-6 ms-auto">
+								<div class="tabcontent__description col-12 col-md-6">
 									<h2 class="tabcontent__title">Fully Resposive</h2>
 									<p class="tabcontent__text">Eum cu tantas legere complectitur, hinc utamur ea eam. Lorem
 										ipsum
@@ -170,28 +208,29 @@
 				<section class="path-brand">
 					<div class="container">
 						<div class="row d-flex justify-content-center">
-							<div class="col-2 text-end">
+							<div class="path-brand__date-box col-12 col-sm-4 col-md-2 text-end">
 								<h4 class="path-brand__title text-capitalize"> We reach the top</h4>
 								<span class="path-brand__date">September 2014</span>
 							</div>
-							<div class="col-1 text-center"><img src="img/timeline-1.png" alt="time line"></div>
-							<div class="col-5 ">
+							<div class="path-brand__line col-1 text-center"><span></span></div>
+							<div class="path-brand__content-box col-12 col-sm-8 col-md-5">
 								<h4 class="path-brand__title">Kat is new brand</h4>
 								<p class="path-brand__text">Lorem ipsum dolor sit amet, rebum dolore labores cu pri. Ferri
 									iudico scripta ut eam, diceret
-									euismod gubergren has eu, an quo tale vivendum. Ad quidam gubergren vituperatoribus sit. Ius
+									euismod gubergren has eu, an quo tale vivendum. Ad quidam gubergren vituperatoribus sit.
+									Ius
 									etiam nemore consulatu ne, at meliore explicari conceptam qui. Agam ceteros forensibus.
 								</p>
 								<a class="path-brand__link text-capitalize" href="#">read more</a>
 							</div>
 						</div>
 						<div class="row d-flex justify-content-center">
-							<div class="col-2 text-end">
+							<div class="path-brand__date-box col-12 col-sm-4 col-md-2 text-end">
 								<h4 class="path-brand__title text-capitalize">Close to the stars</h4>
 								<span class="path-brand__date">May 2014</span>
 							</div>
-							<div class="col-1 text-center"><img src="img/timeline-2.png" alt="time line"></div>
-							<div class="col-5">
+							<div class="path-brand__line col-1 text-center"><span></span></div>
+							<div class="path-brand__content-box col-12 col-sm-8 col-md-5">
 								<h4 class="path-brand__title">Big thing are happening</h4>
 								<p class="path-brand__text">Lorem ipsum dolor sit amet, rebum dolore labores cu pri. Ferri
 									iudico scripta ut eam, diceret euismod gubergren has eu, an quo tale vivendum. Ad quidam
@@ -201,12 +240,12 @@
 							</div>
 						</div>
 						<div class="row d-flex justify-content-center">
-							<div class="col-2 text-end">
+							<div class="path-brand__date-box col-12 col-sm-4 col-md-2 text-end">
 								<h4 class="path-brand__title text-capitalize">New office</h4>
 								<span class="path-brand__date">April 2013</span>
 							</div>
-							<div class="col-1 text-center"><img src="img/timeline-3.png" alt="time line"></div>
-							<div class="col-5">
+							<div class="path-brand__line path-brand__line--last col-1 text-center"><span></span></div>
+							<div class="path-brand__content-box col-12 col-sm-8 col-md-5">
 								<h4 class="path-brand__title">We are moving</h4>
 								<p class="path-brand__text">Lorem ipsum dolor sit amet, rebum dolore labores cu pri. Ferri
 									iudico scripta ut eam, diceret euismod gubergren has eu, an quo tale vivendum.
@@ -215,19 +254,109 @@
 							</div>
 						</div>
 						<div class="row d-flex justify-content-center">
-							<div class="col-2 text-end">
+							<div class="path-brand__date-box col-12 col-sm-4 col-md-2 text-end">
 								<h4 class="path-brand__title text-capitalize">Ket is live</h4>
 								<span class="path-brand__date">march 2012</span>
 							</div>
-							<div class="col-1"></div>
-							<div class="col-5">
+							<div class="path-brand__line col-1"></div>
+							<div class="path-brand__content-box col-12 col-sm-8 col-md-5">
 								<h4 class="path-brand__title">Just started and feel so alive</h4>
 								<p class="path-brand__text">Lorem ipsum dolor sit amet, rebum dolore labores cu pri. Ferri
 									iudico scripta ut eam, diceret euismod gubergren has eu, an quo tale vivendum. Ad quidam
-									gubergren vituperatoribus sit. Ius etiam nemore consulatu ne, at meliore explicari conceptam
+									gubergren vituperatoribus sit. Ius etiam nemore consulatu ne, at meliore explicari
+									conceptam
 									qui. Agam ceteros forensibus vix eu, paulo ubique ex eam.
 								</p>
 								<a class="path-brand__link text-capitalize" href="#">read more</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="portfolio">
+					<div class="container">
+						<div class="portfolio__top row">
+							<div class="col-md-12 col-xl-8 m-auto text-center">
+								<h2 class="portfolio__title">our portfolio</h2>
+								<p class="portfolio__text">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum
+									patrioque
+									mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique
+									referrentur, sed eu dicant expetendis.</p>
+							</div>
+						</div>
+						<div class="portfolio__tabs row">
+							<div class=" col-12 col-xl-6 m-auto text-center">
+								<a class="tabs-link" href="#">All</a>
+								<a class="tabs-link" href="#">Web</a>
+								<a class="tabs-link" href="#">Photography</a>
+								<a class="tabs-link" href="#">Graphic design</a>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__slider slider-portfolio">
+						<div class="portfolio__item">
+							<div class="slide-box">
+								<div class="portfolio__image"></div>
+								<div class="slider-portfolio__content text-center">
+									<h3 class="slider-portfolio__title">Awesome photo</h3>
+									<p class="slider-portfolio__description">
+										Eum cu tantas legere complectitur, hinc<br> utamu
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio__item">
+							<div class="slide-box">
+								<div class="portfolio__image"></div>
+								<div class="slider-portfolio__content text-center">
+									<h3 class="slider-portfolio__title">Awesome photo</h3>
+									<p class="slider-portfolio__description">
+										Eum cu tantas legere complectitur, hinc<br> utamu
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio__item">
+							<div class="slide-box">
+								<div class="portfolio__image"></div>
+								<div class="slider-portfolio__content text-center">
+									<h3 class="slider-portfolio__title">Awesome photo</h3>
+									<p class="slider-portfolio__description">
+										Eum cu tantas legere complectitur, hinc<br> utamu
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio__item">
+							<div class="slide-box">
+								<div class="portfolio__image"></div>
+								<div class="slider-portfolio__content text-center">
+									<h3 class="slider-portfolio__title">Awesome photo</h3>
+									<p class="slider-portfolio__description">
+										Eum cu tantas legere complectitur, hinc<br> utamu
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio__item">
+							<div class="slide-box">
+								<div class="portfolio__image"></div>
+								<div class="slider-portfolio__content text-center">
+									<h3 class="slider-portfolio__title">Awesome photo</h3>
+									<p class="slider-portfolio__description">
+										Eum cu tantas legere complectitur, hinc<br> utamu
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio__item">
+							<div class="slide-box">
+								<div class="portfolio__image"></div>
+								<div class="slider-portfolio__content text-center">
+									<h3 class="slider-portfolio__title">Awesome photo</h3>
+									<p class="slider-portfolio__description">
+										Eum cu tantas legere complectitur, hinc<br> utamu
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -238,7 +367,8 @@
 							<div class="col-8 m-auto text-center">
 								<h2 class="watching-video__title">Nothing say better,then a video</h2>
 								<p class="watching-video__text">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum
-									patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique
+									patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu
+									ubique
 									referrentur, sed eu dicant expetendis.</p>
 								<span>See video</span>
 								<a class="watching-video__play" href="#"></a>
@@ -249,28 +379,32 @@
 				<section class="statistics">
 					<div class="container">
 						<div class="row">
-							<div class="col-3 d-flex flex-column align-items-center justify-content-center">
+							<div
+								class="statistics__item col-md-6 col-xl-3 d-flex flex-column align-items-center justify-content-center">
 								<div class="statistics__image">
 									<img src="img/projects.png" alt="projects">
 								</div>
 								<h3 class="statistics__number">3054</h3>
 								<p class="statistics__text text-uppercase">completed projects</p>
 							</div>
-							<div class="col-3 d-flex flex-column align-items-center justify-content-center">
+							<div
+								class="statistics__item col-md-6 col-xl-3 d-flex flex-column align-items-center justify-content-center">
 								<div class="statistics__image">
 									<img src="img/clicks.png" alt="clicks">
 								</div>
 								<h3 class="statistics__number">7234873</h3>
 								<p class="statistics__text text-uppercase">click presend</p>
 							</div>
-							<div class="col-3 d-flex flex-column align-items-center justify-content-center">
+							<div
+								class="statistics__item col-md-6 col-xl-3 d-flex flex-column align-items-center justify-content-center">
 								<div class="statistics__image">
 									<img src="img/mails.png" alt="mails">
 								</div>
 								<h3 class="statistics__number">4670</h3>
 								<p class="statistics__text text-uppercase">mails sented & recived</p>
 							</div>
-							<div class="col-3 d-flex flex-column align-items-center justify-content-center">
+							<div
+								class="statistics__item col-md-6 col-xl-3 d-flex flex-column align-items-center justify-content-center">
 								<div class="statistics__image">
 									<img src="img/jokes.png" alt="jokes">
 								</div>
@@ -291,7 +425,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-3">
+							<div class="col-12 col-md-6 col-xxl-3">
 								<div class="team__item">
 									<div class="team__img">
 										<img src="img/team-img.jpg" alt="john doe">
@@ -301,19 +435,20 @@
 										</div>
 									</div>
 									<div class="team__desc">
-										<p class="team__text text-center">Eum cu tantas legere complectitur, hinc utamur ea eam.
+										<p class="team__text text-center">Eum cu tantas legere complectitur, hinc utamur ea
+											eam.
 											Eum
 											patrioque mnesarchum eu.</p>
 									</div>
 									<div class="team__social social">
-										<a href="#" class="social__link fab fa-facebook-f"></a>
-										<a href="#" class="social__link fab fa-twitter"></a>
-										<a href="#" class="social__link fab fa-google-plus-g"></a>
-										<a href="#" class="social__link fab fa-dribbble"></a>
+										<a href="#" class="social__link social__link--f fab fa-facebook-f"></a>
+										<a href="#" class="social__link social__link--t fab fa-twitter"></a>
+										<a href="#" class="social__link social__link--g fab fa-google-plus-g"></a>
+										<a href="#" class="social__link social__link--d fab fa-dribbble"></a>
 									</div>
 								</div>
 							</div>
-							<div class="col-3">
+							<div class="col-12 col-md-6 col-xxl-3">
 								<div class="team__item">
 									<div class="team__img">
 										<img src="img/team-img.jpg" alt="john doe">
@@ -323,19 +458,20 @@
 										</div>
 									</div>
 									<div class="team__desc">
-										<p class="team__text text-center">Eum cu tantas legere complectitur, hinc utamur ea eam.
+										<p class="team__text text-center">Eum cu tantas legere complectitur, hinc utamur ea
+											eam.
 											Eum
 											patrioque mnesarchum eu.</p>
 									</div>
 									<div class="team__social social">
-										<a href="#" class="social__link fab fa-facebook-f"></a>
-										<a href="#" class="social__link fab fa-twitter"></a>
-										<a href="#" class="social__link fab fa-google-plus-g"></a>
-										<a href="#" class="social__link fab fa-dribbble"></a>
+										<a href="#" class="social__link social__link--f fab fa-facebook-f"></a>
+										<a href="#" class="social__link social__link--t fab fa-twitter"></a>
+										<a href="#" class="social__link social__link--g fab fa-google-plus-g"></a>
+										<a href="#" class="social__link social__link--d fab fa-dribbble"></a>
 									</div>
 								</div>
 							</div>
-							<div class="col-3">
+							<div class="col-12 col-md-6 col-xxl-3">
 								<div class="team__item">
 									<div class="team__img">
 										<img src="img/team-img.jpg" alt="john doe">
@@ -345,19 +481,20 @@
 										</div>
 									</div>
 									<div class="team__desc">
-										<p class="team__text text-center">Eum cu tantas legere complectitur, hinc utamur ea eam.
+										<p class="team__text text-center">Eum cu tantas legere complectitur, hinc utamur ea
+											eam.
 											Eum
 											patrioque mnesarchum eu.</p>
 									</div>
 									<div class="team__social social">
-										<a href="#" class="social__link fab fa-facebook-f"></a>
-										<a href="#" class="social__link fab fa-twitter"></a>
-										<a href="#" class="social__link fab fa-google-plus-g"></a>
-										<a href="#" class="social__link fab fa-dribbble"></a>
+										<a href="#" class="social__link social__link--f fab fa-facebook-f"></a>
+										<a href="#" class="social__link social__link--t fab fa-twitter"></a>
+										<a href="#" class="social__link social__link--g fab fa-google-plus-g"></a>
+										<a href="#" class="social__link social__link--d fab fa-dribbble"></a>
 									</div>
 								</div>
 							</div>
-							<div class="col-3">
+							<div class="col-12 col-md-6 col-xxl-3">
 								<div class="team__item">
 									<div class="team__img">
 										<img src="img/team-img.jpg" alt="john doe">
@@ -367,15 +504,16 @@
 										</div>
 									</div>
 									<div class="team__desc">
-										<p class="team__text text-center">Eum cu tantas legere complectitur, hinc utamur ea eam.
+										<p class="team__text text-center">Eum cu tantas legere complectitur, hinc utamur ea
+											eam.
 											Eum
 											patrioque mnesarchum eu.</p>
 									</div>
 									<div class="team__social social">
-										<a href="#" class="social__link fab fa-facebook-f"></a>
-										<a href="#" class="social__link fab fa-twitter"></a>
-										<a href="#" class="social__link fab fa-google-plus-g"></a>
-										<a href="#" class="social__link fab fa-dribbble"></a>
+										<a href="#" class="social__link social__link--f fab fa-facebook-f"></a>
+										<a href="#" class="social__link social__link--t fab fa-twitter"></a>
+										<a href="#" class="social__link social__link--g fab fa-google-plus-g"></a>
+										<a href="#" class="social__link social__link--d fab fa-dribbble"></a>
 									</div>
 								</div>
 							</div>
@@ -384,18 +522,24 @@
 				</section>
 				<section class="about">
 					<div class="container">
-						<div class="row d-flex flex-row justify-content-between">
-							<div class="about__image col-6"></div>
-							<div class="about__content col-6">
+						<div class=" about__inner	row justify-content-between">
+							<div class="about__image col-12 col-xxl-6"></div>
+							<div class="about__content col-8 col-xxl-6">
 								<h3 class="about__title">about ket</h3>
-								<p class="about__text">Lorem ipsum dolor sit amet, quod iusto senserit at his, animal phaedrum
+								<p class="about__text">Lorem ipsum dolor sit amet, quod iusto senserit at his, animal
+									phaedrum
 									hendrerit no cum. Duis mucius inciderint qui et, id epicuri corrumpit vim, vis eu erat
-									sadipscing consectetuer. No nec justo nihil phaedrum, duis utinam nam ne. Probo vidisse sea
-									ut, pro tale stet assueverit an, ne oratio albucius adversarium mei. Sale quando mel et, usu
+									sadipscing consectetuer. No nec justo nihil phaedrum, duis utinam nam ne. Probo vidisse
+									sea
+									ut, pro tale stet assueverit an, ne oratio albucius adversarium mei. Sale quando mel
+									et, usu
 									ad aeterno percipitur.</p>
-								<p class="about__text">Nullam vocibus iracundia cum ut, mea sale nullam an. Hinc primis est ei.
-									Ad est decore quaeque propriae. Nam eu graece adipiscing, est eu autem mucius, duo ei eirmod
-									mentitum. Sit soleat debitis delectus ea, mei at commodo prompta erroribus. Eu everti mollis
+								<p class="about__text">Nullam vocibus iracundia cum ut, mea sale nullam an. Hinc primis
+									est ei.
+									Ad est decore quaeque propriae. Nam eu graece adipiscing, est eu autem mucius, duo ei
+									eirmod
+									mentitum. Sit soleat debitis delectus ea, mei at commodo prompta erroribus. Eu everti
+									mollis
 									vis. Suas putent officiis duo ei, pro movet aliquip ex..</p>
 							</div>
 						</div>
@@ -404,7 +548,7 @@
 				<section class="voice-message">
 					<div class="container">
 						<div class="row">
-							<div class="col-4 m-auto">
+							<div class="col-8 col-xl-4 m-auto">
 								<div class="voice-message__slider">
 									<div class="voice-message__item text-center">
 										<div class="voice-message__sound m-auto mb-2"></div>
@@ -437,49 +581,53 @@
 							</div>
 						</div>
 						<div class="news__articles articles row d-flex flex-row justify-content-center">
-							<div class="col-1">
+							<div class="col-12 col-xl-1">
 								<span class="news__date">25</span>
 								<span class="news__month">September</span>
 							</div>
-							<div class="articles__paper col-7">
+							<div class="articles__paper col-12 col-md-7">
 								<p class="news__description">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum
-									patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique
+									patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu
+									ubique
 									referrentur, sed eu dicant expetendis.</p>
 								<a class="news__link" href="#">Read more</a>
 							</div>
 						</div>
 						<div class="news__articles articles row d-flex flex-row justify-content-center">
-							<div class="col-1">
+							<div class="col-12 col-xl-1">
 								<span class="news__date">15</span>
 								<span class="news__month">June</span>
 							</div>
-							<div class="articles__paper col-7">
+							<div class="articles__paper col-12 col-md-7">
 								<p class="news__description">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum
-									patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique
+									patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu
+									ubique
 									referrentur, sed eu dicant expetendis.</p>
 								<a class="news__link" href="#">Read more</a>
 							</div>
 						</div>
 						<div class="news__articles articles row d-flex flex-row justify-content-center">
-							<div class="col-1">
+							<div class="col-12 col-xl-1">
 								<span class="news__date">07</span>
 								<span class="news__month">April</span>
 							</div>
-							<div class="articles__paper col-7">
+							<div class="articles__paper col-12 col-md-7">
 								<p class="news__description">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum
-									patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique
+									patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu
+									ubique
 									referrentur, sed eu dicant expetendis.</p>
 								<a class="news__link" href="#">Read more</a>
 							</div>
 						</div>
 						<div class="news__articles articles row d-flex flex-row justify-content-center">
-							<div class="col-1">
+							<div class="col-12 col-xl-1">
 								<span class="news__date">04</span>
 								<span class="news__month">May</span>
 							</div>
-							<div class="articles__paper col-7">
+							<div class="articles__paper col-12 col-md-7">
 								<p class="news__description">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum
-									patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique
+									patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu
+									ubique
 									referrentur, sed eu dicant expetendis.</p>
 								<a class="news__link" href="#">Read more</a>
 							</div>
@@ -489,17 +637,23 @@
 				<section class="design">
 					<div class="container">
 						<div class="design__inner row">
-							<div class="col-4">
+							<div class="col-12 col-xl-4">
 								<div class="design__image">
-									<img src="img/screens.png" alt="screens">
+									<picture>
+										<source media="(min-width:1200px)" srcset="img/screens.png">
+										<source media="(min-width:992px)" srcset="img/screens-min.png">
+										<img src="img/screens-min.png" alt="Flowers" style="width:auto;">
+									</picture>
 								</div>
 							</div>
-							<div class="col-7 ms-auto">
+							<div class="col-12 col-md-7  ms-auto">
 								<h3 class="design__title">Modern design</h3>
-								<p class="design__text">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque
+								<p class="design__text">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum
+									patrioque
 									mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique
 									referrentur, sed eu dicant expetendis.Eum cu tantas legere complectitur, hinc utamur ea
-									eam.<br>Ynesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique
+									eam.<br>Ynesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu
+									ubique
 									referrentur, sed eu dicant expetendis.</p>
 							</div>
 						</div>
@@ -510,37 +664,53 @@
 						<div class="reviews__top row">
 							<div class="col-8 text-center m-auto">
 								<h2 class="reviews__title">What clients say</h2>
-								<p class="reviews__text">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque
+								<p class="reviews__text">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum
+									patrioque
 									mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique
 									referrentur, sed eu dicant expetendis.</p>
 							</div>
 						</div>
 						<div class="row">
-							<div class="reviews__client client col-4">
+							<div class="reviews__client client col-12 col-sm-6 col-lg-4">
 								<div class="client__item text-center">
-									<h3 class="client__name">anya stoen</h3>
-									<p class="client__position">Graphic design</p>
-									<p class="client__message">“Eum cu tantas legere complectitur, hinc utamur ea eam. Eum
-										patrioque mnesarchum eu, diam
-										erant convenire et vis. Et essent evertitur sea.”</p>
+									<div class="client__header">
+										<h3 class="client__name">anya stoen</h3>
+										<p class="client__position">Graphic design</p>
+									</div>
+									<div class="client__footer">
+										<p class="client__message">“Eum cu tantas legere complectitur, hinc utamur ea eam.
+											Eum
+											patrioque mnesarchum eu, diam
+											erant convenire et vis. Et essent evertitur sea.”</p>
+									</div>
 								</div>
 							</div>
-							<div class="reviews__client client col-4">
+							<div class="reviews__client client col-12 col-sm-6 col-lg-4">
 								<div class="client__item text-center">
-									<h3 class="client__name">anya stoen</h3>
-									<p class="client__position">Graphic design</p>
-									<p class="client__message">“Eum cu tantas legere complectitur, hinc utamur ea eam. Eum
-										patrioque mnesarchum eu, diam
-										erant convenire et vis. Et essent evertitur sea.”</p>
+									<div class="client__header">
+										<h3 class="client__name">anya stoen</h3>
+										<p class="client__position">Graphic design</p>
+									</div>
+									<div class="client__footer">
+										<p class="client__message">“Eum cu tantas legere complectitur, hinc utamur ea eam.
+											Eum
+											patrioque mnesarchum eu, diam
+											erant convenire et vis. Et essent evertitur sea.”</p>
+									</div>
 								</div>
 							</div>
-							<div class="reviews__client client col-4">
+							<div class="reviews__client client col-12 col-sm-6 col-lg-4">
 								<div class="client__item text-center">
-									<h3 class="client__name">anya stoen</h3>
-									<p class="client__position">Graphic design</p>
-									<p class="client__message">“Eum cu tantas legere complectitur, hinc utamur ea eam. Eum
-										patrioque mnesarchum eu, diam
-										erant convenire et vis. Et essent evertitur sea.”</p>
+									<div class="client__header">
+										<h3 class="client__name">anya stoen</h3>
+										<p class="client__position">Graphic design</p>
+									</div>
+									<div class="client__footer">
+										<p class="client__message">“Eum cu tantas legere complectitur, hinc utamur ea eam.
+											Eum
+											patrioque mnesarchum eu, diam
+											erant convenire et vis. Et essent evertitur sea.”</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -549,12 +719,12 @@
 				<section class="subscribe">
 					<div class="container">
 						<div class="row">
-							<div class="col-6 text-center m-auto">
+							<div class="col-12  text-center m-auto">
 								<h3 class="subscribe__title">Want to hear more story,subscribe for our newsletter</h3>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-2 text-center m-auto">
+							<div class="col-6 text-center m-auto">
 								<a class="subscribe__btn" href="#">Subscribe</a>
 							</div>
 						</div>
@@ -565,19 +735,20 @@
 						<div class="contacts__top row">
 							<div class="col-8 text-center m-auto">
 								<h2 class="contacts__title">contact us</h2>
-								<p class="contacts__text">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque
+								<p class="contacts__text">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum
+									patrioque
 									mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique
 									referrentur, sed eu dicant expetendis.</p>
 							</div>
 						</div>
 						<form action="" method="post" class="contacts__form form row">
-							<div class="form__input-box col-4 ms-auto">
+							<div class="form__input-box col-12 col-sm-4 ms-auto">
 								<input class="form__input" placeholder="Your name here"></input>
 							</div>
-							<div class="form__input-box col-4 me-auto">
+							<div class="form__input-box col-12 col-sm-4 me-auto">
 								<input class="form__input" placeholder="Your mail here"></input>
 							</div>
-							<div class="form__textarea-box col-8">
+							<div class="form__textarea-box col-12 col-sm-8">
 								<textarea class="form__message" placeholder="Your message here" rows="1"></textarea>
 							</div>
 						</form>
@@ -586,7 +757,7 @@
 				<section class="map">
 					<div class="container">
 						<div class="row">
-							<div class="col-4 m-auto text-center">
+							<div class="col-12 col-sm-6 m-auto text-center">
 								<div class="map__marker">
 									<p class="map__address">Awesome Address 432</p>
 									<a class="map__mail" href="mailto:ourmail@sometype.com">ourmail@sometype.com</a>
@@ -600,11 +771,10 @@
 				</section>
 			</main>
 		</div>
-
 		<footer class="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-3 m-auto text-center">
+					<div class="col-12  text-center">
 						<p class="footer__copy"> © 2014 - <span>Kat</span> All Right Reserved</p>
 					</div>
 				</div>
