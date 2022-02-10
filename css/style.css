@@ -979,11 +979,13 @@ main {
 }
 
 .voice-message__slider .slick-next {
-	left: 56%;
+	right: 50%;
+	transform: translateX(200%);
 	bottom: -60px;
 }
 .voice-message__slider .slick-prev {
-	left: 36%;
+	left: 50%;
+	transform: translateX(-200%);
 	bottom: -60px;
 }
 

@@ -65,10 +65,11 @@ function openCity(evt, cityName) {
 
 
 $('.voice-message__slider').slick({
-
+	autoplay: true,
 });
 
 $('.portfolio__slider').slick({
+	autoplay: true,
 	centerMode: true,
 	infinite: true,
 	centerPadding: '85px',
