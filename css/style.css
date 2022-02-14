@@ -346,8 +346,6 @@ main {
 .choice {
 	padding: 50px 0px 0px 0px;
 	background-color: #f7f7f7;
-	height: 575px;
-	overflow-y: hidden;
 }
 .tab {
 	margin-bottom: 85px;
@@ -377,7 +375,13 @@ main {
 .tab button {
 	width: 100%;
 }
-
+.tabcontent__image {
+	height: 390px;
+	overflow-y: hidden;
+}
+.tabcontent__image img {
+	height: auto;
+}
 .tabcontent__btn {
 	border-radius: 0;
 	min-width: 170px;
@@ -419,6 +423,7 @@ main {
 	transform: rotate(-45deg) translateX(-50%);
 	width: 12px;
 	height: 12px;
+
 	background-color: #f7f7f7;
 	border-left: 1px solid #00e1fd;
 	border-bottom: 1px solid #00e1fd;
@@ -445,6 +450,7 @@ main {
 		font-size: 13px;
 	}
 	.tabcontent__image {
+		height: auto;
 		max-width: 200px;
 	}
 	.tabcontent__image img {
@@ -1259,6 +1265,7 @@ main {
 	width: 100%;
 	max-width: 170px;
 	text-align: center;
+	border-radius: 0;
 	color: #fff;
 	border: 1px solid var(--bs-cyan);
 	transition: all 0.3s ease;
@@ -1584,4 +1591,17 @@ main {
 
 .tabs-link:hover {
 	border: 1px solid var(--bs-cyan);
+}
+
+.modal-dialog {
+	max-width: 800px;
+}
+.modal-header {
+	border-bottom: none;
+}
+.modal-content {
+	min-height: 500px;
+}
+.video__item {
+	width: 700px;
 }

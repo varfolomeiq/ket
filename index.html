@@ -336,8 +336,29 @@
 									patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu
 									ubique
 									referrentur, sed eu dicant expetendis.</p>
-								<span>See video</span>
-								<a class="watching-video__play" href="#"></a>
+								<span id="modal">See video</span>
+								<!-- <a class="watching-video__play" href="#"></a> -->
+								<button type="button" class="btn btn-primary watching-video__play" data-bs-toggle="modal"
+									data-bs-target="#exampleModal">
+
+								</button>
+								<div class="modal fade video" id="exampleModal" tabindex="-1"
+									aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+												<button type="button" class="btn-close" data-bs-dismiss="modal"
+													aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												<div>
+													<video controls="controls" class="video__item" src="img/video.mp4"></video>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -691,7 +712,7 @@
 						</div>
 						<div class="row">
 							<div class="col-6 text-center m-auto">
-								<a class="subscribe__btn" href="#">Subscribe</a>
+								<a class="btn btn-outline-primary subscribe__btn" href="#">Subscribe</a>
 							</div>
 						</div>
 					</div>

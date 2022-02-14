@@ -97,3 +97,10 @@ $('.portfolio__slider').slick({
 		}
 	]
 });
+$(document).on('hide.bs.modal', function (e) {
+	const $target = $(e.target);
+	if ($target.hasClass('video')) {
+		const video = $target.find('video')[0];
+		video.pause();
+	}
+});
